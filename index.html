@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>CodeConnect</title>
+</head>
+
+<body>
+    <aside>
+        <img src="./img/Logo.svg" alt="Logo do CodeConnect">
+
+        <nav>
+            <ul class="lista-links">
+                <li>
+                    <a href="#" class="link-destaque">Publicar</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/feed.svg" alt="Ícone feed">
+                        Feed
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/account_circle.svg" alt="Ícone feed">
+                        Perfil
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/info.svg" alt="Ícone feed">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/logout.svg" alt="Ícone feed">
+                        Sair 
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="container-img">
+            <div class="image-content">
+                <img src="./img/imagem1.png" alt="Imagem Post">
+            </div>
+            <a href="#" class="button-upload">
+                Carregar imagem
+                <img src="./img/upload.svg" alt="Upload imagem">
+            </a>
+            <p class="name-image">
+                image_projeto.png
+                <a href="#">
+                    <img src="./img/close.svg" alt="Botão apagar">
+                </a>
+            </p>
+        </div>
+
+        <form class="form">
+            <h2>Novo Projeto</h2>
+            <div class="content-info">
+                <label for="name">Nome do projeto</label>
+                <input type="text" name="name" class="name-input">
+            </div>
+            <div class="content-info">
+                <label for="description">Descrição</label>
+                <textarea name="description" class="description-input"></textarea>
+            </div>
+            <div class="content-info">
+                <label for="category">Tags</label>
+                <input type="text" name="category" class="category-input">
+            </div>
+
+            <div class="btn-container">
+                <button class="btn-delete">
+                    Descartar
+                    <img src="./img/trash.svg" alt="">
+                </button>
+                <button class="btn-publish">
+                    Publicar
+                    <img src="./img/arrow_forward2.svg" alt="">
+                </button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
