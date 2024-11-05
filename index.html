@@ -51,20 +51,18 @@
     </aside>
 
     <main>
-        <div class="container-img">
+        <div class="container-upload-img">
             <div class="image-content">
-                <img src="./img/imagem1.png" alt="Imagem Post">
+                <img src="./img/imagem1.png" alt="Imagem Post" class="main-image">
             </div>
-            <a href="#" class="button-upload">
-                Carregar imagem
-                <img src="./img/upload.svg" alt="Upload imagem">
-            </a>
-            <p class="name-image">
-                image_projeto.png
+            <button id="upload-btn">Carregar imagem</button>
+            <input type="file" id="image-upload" accept="image/" style="display: none" />
+            <span class="container-name-image">
+                <p>image_projeto.png</p>
                 <a href="#">
                     <img src="./img/close.svg" alt="Botão apagar">
                 </a>
-            </p>
+            </span>
         </div>
 
         <form class="form">
@@ -72,15 +70,21 @@
             <div class="content-info">
                 <label for="name">Nome do projeto</label>
                 <input type="text" name="name" class="name-input">
-            </div>
-            <div class="content-info">
+                <div class="content-info">
                 <label for="description">Descrição</label>
                 <textarea name="description" class="description-input"></textarea>
             </div>
+
             <div class="content-info">
                 <label for="category">Tags</label>
                 <input type="text" name="category" class="category-input">
             </div>
+            <ul class="list-tags">
+                <li class="item-tag">
+                    Front-end
+                    <img src="./img/close-black.svg" alt="">
+                </li>
+            </ul>
 
             <div class="btn-container">
                 <button class="btn-delete">
